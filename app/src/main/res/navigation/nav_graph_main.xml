@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph_main"
-    app:startDestination="@+id/firstFragment">
+    app:startDestination="@+id/splashFragment">
 
 
     <fragment
@@ -24,13 +24,4 @@
         tools:layout="@layout/fragment_home" />
 
     <include app:graph="@navigation/nav_graph" />
-    <fragment
-        android:id="@+id/firstFragment"
-        android:name="com.example.bottomnavigation.FirstFragment"
-        android:label="fragment_first"
-        tools:layout="@layout/fragment_first" >
-        <action
-            android:id="@+id/action_firstFragment_to_splashFragment"
-            app:destination="@id/splashFragment" />
-    </fragment>
 </navigation>
